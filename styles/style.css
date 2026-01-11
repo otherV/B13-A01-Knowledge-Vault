@@ -1,10 +1,163 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .font-inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.container {
+  width: 92.5%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.bttn {
+  padding: 12px 16px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.color-white{
+  color: white;
+}
+
+.color-green{
+  color: #30B868;
+}
+
+.bg-white{
+  background: white;
+}
+
+.bg-green{
+  background: #30B868;
+}
+
+.bg-glass{
+  background: transparent;
+}
+
+.border-white{
+  border: 1px solid white;
+}
+
+.border-green{
+  border: 1px solid #30B868;
+}
+
+#top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0px 16px 0px;
+}
+
+#top-nav .logo {
+  cursor: pointer;
+}
+
+#top-nav .menu ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 32px;
+}
+
+#top-nav .menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#top-nav .menu ul li a {
+  text-decoration: none;
+}
+
+#banner {
+  background: url(../assets/hero-bg.png), rgba(0, 25, 49, 0.8);
+  background-repeat: no-repeat;
+}
+
+#banner .content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 115.5px 120px 179.5px 120px;
+}
+
+#banner .notify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#banner .notify > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  border-radius: 100px;
+  background: white;
+  font-size: 16px;
+  font-weight: 500;
+  color: #30B868;
+  padding: 8px 12px;
+}
+
+#banner .notify img {
+  margin-right: 6px;
+}
+
+#banner .heading {
+  padding-bottom: 16px;
+}
+
+#banner .heading h1 {
+   font-size: 72px;
+   font-weight: 700;
+   text-align: center;
+}
+
+#banner .heading-subtitle span{
+  max-width: 770px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#banner .button-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding-top: 32px;
+}
+
+#banner .button-group button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#banner .button-group button:first-child img{
+  margin-left: 10px;
+}
+
+#banner .button-group button:last-child img{
+  margin-right: 10px;
 }

@@ -12,14 +12,14 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 
-
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body class="font-inter">
 
     <header>
 
-        <nav id="navbar">
+        <nav id="top-nav" class="container">
 
             <div class="logo">
                 <img src="./assets/logo-navbar.png" alt="">
@@ -27,33 +27,33 @@
 
             <div class="menu">
                 <ul>
-                    <li>Features</li>
-                    <li>How It Works</li>
-                    <li>Why It's Different</li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">How It Works</a></li>
+                    <li><a href="">Why It's Different</a></li>
                 </ul>
             </div>
 
-            <div class="button">
-                <button>Get Early Access</button>
+            <div class="action">
+                <button class="bttn bg-green">Get Early Access</button>
             </div>
 
         </nav>
 
-        <section id="banner">
+        <section id="banner" class="">
 
-            <div class="content">
+            <div class="content container">
 
-                <p class="notify"><span>
-                        Early Access Now Open
-                    </span></p>
+                <p class="notify"><span><img src="./assets/notify-led.webp" alt=""><span>Early Access Now Open</span></span>
+                </p>
 
-                <h1 class="heading"> Structured thinking,not just note-taking.</h1>
-                <p class="heading-subtitle"> A private space to store notes, links, and learning summaries — designed to
-                    help you think clearly, connect ideas, and turn learning into long-term knowledge.</p>
+                <div class="heading"><h1 class="color-white capitalize">Structured thinking,</h1><h1 class="color-green capitalize">not just note-taking.</h1></div>
+                
+                <p class="heading-subtitle color-white"><span>A private space to store notes, links, and learning summaries — designed to<br>
+                    help you think clearly, connect ideas, and turn learning into long-term knowledge.</span></p>
 
                 <div class="button-group">
-                    <button>Start Building Your Vault</button>
-                    <button>See How It Works</button>
+                    <button class="bttn bg-green"><span>Start Building Your Vault</span><img src="./assets/ArrowRight.png" alt=""></button>
+                    <button class="bttn bg-glass border-white"><img src="./assets/Play.webp" alt=""><span>See How It Works</span></button>
                 </div>
 
             </div>
@@ -62,7 +62,7 @@
 
     </header>
 
-    <section id="notes">
+    <section id="notes" class="container">
         <div class="content">
             <h1 class="heading">Notes don't fail, Structure does.</h1>
             <p class="heading-subtitle">You're not bad at learning. Your tools just weren't built for how knowledge
@@ -95,7 +95,7 @@
         </div>
     </section>
 
-    <section id="second-brain">
+    <section id="second-brain" class="container">
         <div class="knowledge-img">
             <img src="./assets/knowledge.png" alt="">
         </div>
@@ -115,7 +115,7 @@
         </div>
     </section>
 
-    <section id="early-access">
+    <section id="early-access" class="container">
         <div class="content">
             <h1 class="heading">Ready To Think More Clearly?</h1>
             <p class="heading-subtitle"> Join thousands of learners who are building their personal knowledge vaults.
@@ -128,7 +128,7 @@
 
     <footer>
 
-        <div id="foot-bar">
+        <div id="foot-bar" class="container">
 
             <div class="logo">
                 <img src="./assets/logo-footer.png" alt="">
@@ -147,7 +147,7 @@
 
         <hr>
 
-        <div id="copyright">
+        <div id="copyright" class="container">
             <p>© 2026 Personal Knowledge Vault. All rights reserved.</p>
         </div>
 
