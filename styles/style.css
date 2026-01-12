@@ -13,8 +13,12 @@
   text-transform: capitalize;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .container {
-  width: 92.5%;
+  width: 85%;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -27,6 +31,7 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  text-transform: capitalize;
 }
 
 .color-white {
@@ -37,7 +42,7 @@
   color: #30B868;
 }
 
-.color-grey{
+.color-grey {
   color: #627382;
 }
 
@@ -45,8 +50,16 @@
   background: white;
 }
 
+.bg-off-white {
+  background: #fbfbfb;
+}
+
 .bg-green {
   background: #30B868;
+}
+
+.bg-grey {
+  background: #627382;
 }
 
 .bg-glass {
@@ -106,6 +119,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 #banner .notify>span {
@@ -152,19 +166,31 @@
   padding-top: 32px;
 }
 
-#banner .button-group button {
+#banner .button-group button,
+#early-access .content button {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-#banner .button-group button:first-child img {
+#banner .button-group button:first-child img,
+#early-access .content button img {
   margin-left: 10px;
+}
+
+#banner .button-group button:first-child:hover,
+#early-access .content button:hover,
+#top-nav .action button:hover {
+  background: #508f65;
 }
 
 #banner .button-group button:last-child img {
   margin-right: 10px;
+}
+
+#banner .button-group button:last-child:hover {
+  background: #30B868;
 }
 
 #notes .content {
@@ -201,9 +227,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 24px; 
+  padding: 24px;
   border-radius: 8px;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.06);
 }
 
 #notes .card-group .card .card-icon {
@@ -237,4 +263,131 @@
   text-align: center;
   font-size: 16px;
   font-weight: 400;
+}
+
+#second-brain {
+  margin-top: 120px;
+}
+
+#second-brain .container {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+}
+
+#second-brain .container .knowledge-img {
+  width: 50%;
+}
+
+#second-brain .container .content {
+  padding: 102px 0px 102px 60px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#second-brain .container .content .message {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#second-brain .container .content .heading {
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+#second-brain .container .content .heading-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+#second-brain .container .content .items {
+  list-style-image: url(../assets/CheckCircle.png);
+  list-style-position: inside;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 16px;
+  padding-bottom: 16px;
+}
+
+#second-brain .container .content .items li {
+  padding-bottom: 16px;
+}
+
+#early-access .content {
+  margin-top: 120px;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f6f2;
+}
+
+#early-access .content .heading {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#early-access .content .heading-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+#early-access .content button {
+  margin-top: 24px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#early-access .content .ending-message {
+  margin-top: 16px;
+}
+
+footer {
+  background: #0a1f34;
+  margin-top: 120px;
+}
+
+footer .container {
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+
+#foot-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #243548;
+  padding-bottom: 80px;
+}
+
+#foot-bar .menu p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#foot-bar .menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+#foot-bar .menu ul li {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 20px;
+}
+
+#copyright{
+  text-align: center;
+  margin-top: 30px;
 }
